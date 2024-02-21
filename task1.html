@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+</head>
+
+<body>
+
+
+
+
+
+    <script>
+        let numberarr1 = [
+            [10, 20, 30, 25],
+            [40, 50, 60, 26],
+            [70, 80, 90, 27]
+        ];
+
+        let numberarr2 = [
+            [90, 80, 70 ,28],
+            [60, 50, 40, 29],
+            [30, 20, 10, 30]
+        ];
+
+        let sumarr = [];
+        for (let i = 0; i < numberarr1.length; i++) {
+            let innerarr = [];
+            for (let j = 0; j < numberarr1[i].length; j++) {
+                innerarr.push(numberarr1[i][j] + numberarr2[i][j]);
+            }
+            sumarr.push(innerarr);
+        }
+        console.log(sumarr); 
+
+    </script>
+</body>
+
+</html>
